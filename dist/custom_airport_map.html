@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a94d8f3598c9c6a155739f53dcd37b6d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+             <h3 align="center" style="font-size:20px"><b>SEA A220 B Dec 24 Stops Map</b></h3>
+             
+    
+            <div class="folium-map" id="map_a94d8f3598c9c6a155739f53dcd37b6d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a94d8f3598c9c6a155739f53dcd37b6d = L.map(
+                "map_a94d8f3598c9c6a155739f53dcd37b6d",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_709baed265fd792517b9a0d8380a3cf6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_709baed265fd792517b9a0d8380a3cf6.addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+            var circle_marker_e7d9b62f79dfcf1be25004fefe507bdf = L.circleMarker(
+                [47.449001, -122.308998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.6, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_8c62555b15effa329778b986983af8e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca4445c08e5cdb55df2d11d648d8c448 = $(`<div id="html_ca4445c08e5cdb55df2d11d648d8c448" style="width: 100.0%; height: 100.0%;">SEA: Seattle Tacoma International Airport: 118</div>`)[0];
+                popup_8c62555b15effa329778b986983af8e4.setContent(html_ca4445c08e5cdb55df2d11d648d8c448);
+            
+        
+
+        circle_marker_e7d9b62f79dfcf1be25004fefe507bdf.bindPopup(popup_8c62555b15effa329778b986983af8e4)
+        ;
+
+        
+    
+    
+            circle_marker_e7d9b62f79dfcf1be25004fefe507bdf.bindTooltip(
+                `<div>
+                     SEA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f5e756ec8381687ef52fd0269b71550f = L.circleMarker(
+                [39.834598541259766, -88.8656997680664],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.6, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_ca217924bcd192e0e170a370c0658831 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfe5f9de72d050110a65fd13c0d5caa6 = $(`<div id="html_dfe5f9de72d050110a65fd13c0d5caa6" style="width: 100.0%; height: 100.0%;">DEC: Decatur Airport: 38</div>`)[0];
+                popup_ca217924bcd192e0e170a370c0658831.setContent(html_dfe5f9de72d050110a65fd13c0d5caa6);
+            
+        
+
+        circle_marker_f5e756ec8381687ef52fd0269b71550f.bindPopup(popup_ca217924bcd192e0e170a370c0658831)
+        ;
+
+        
+    
+    
+            circle_marker_f5e756ec8381687ef52fd0269b71550f.bindTooltip(
+                `<div>
+                     DEC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_54a0354c37ed779cce6f1ad8e8395bb8 = L.circleMarker(
+                [39.861698150635, -104.672996521],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_fe6c531731d3802fdc2ba2a9ac18d25e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29ed40cb81211245e8ed6f64123c9ac1 = $(`<div id="html_29ed40cb81211245e8ed6f64123c9ac1" style="width: 100.0%; height: 100.0%;">DEN: Denver International Airport: 10</div>`)[0];
+                popup_fe6c531731d3802fdc2ba2a9ac18d25e.setContent(html_29ed40cb81211245e8ed6f64123c9ac1);
+            
+        
+
+        circle_marker_54a0354c37ed779cce6f1ad8e8395bb8.bindPopup(popup_fe6c531731d3802fdc2ba2a9ac18d25e)
+        ;
+
+        
+    
+    
+            circle_marker_54a0354c37ed779cce6f1ad8e8395bb8.bindTooltip(
+                `<div>
+                     DEN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_df2ccd3b45200a162e168d5dd1b2b83e = L.circleMarker(
+                [40.78839874267578, -111.97799682617188],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.4, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_68a258fe8732dfb723cd30cefb873c4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aacc0346f6ff6068a2b5dff2d950e0d8 = $(`<div id="html_aacc0346f6ff6068a2b5dff2d950e0d8" style="width: 100.0%; height: 100.0%;">SLC: Salt Lake City International Airport: 32</div>`)[0];
+                popup_68a258fe8732dfb723cd30cefb873c4e.setContent(html_aacc0346f6ff6068a2b5dff2d950e0d8);
+            
+        
+
+        circle_marker_df2ccd3b45200a162e168d5dd1b2b83e.bindPopup(popup_68a258fe8732dfb723cd30cefb873c4e)
+        ;
+
+        
+    
+    
+            circle_marker_df2ccd3b45200a162e168d5dd1b2b83e.bindTooltip(
+                `<div>
+                     SLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7a548dcf95bba60770c29f21c4e5353f = L.circleMarker(
+                [32.896801, -97.038002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.4, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_adf5bb34f070826982c3c35303f99159 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7f8e04f5ee4069f8f7e26e0edf999cc = $(`<div id="html_d7f8e04f5ee4069f8f7e26e0edf999cc" style="width: 100.0%; height: 100.0%;">DFW: Dallas Fort Worth International Airport: 52</div>`)[0];
+                popup_adf5bb34f070826982c3c35303f99159.setContent(html_d7f8e04f5ee4069f8f7e26e0edf999cc);
+            
+        
+
+        circle_marker_7a548dcf95bba60770c29f21c4e5353f.bindPopup(popup_adf5bb34f070826982c3c35303f99159)
+        ;
+
+        
+    
+    
+            circle_marker_7a548dcf95bba60770c29f21c4e5353f.bindTooltip(
+                `<div>
+                     DFW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_927b162f9ecb0e380cacbf855a1df49a = L.circleMarker(
+                [40.77719879, -73.87259674],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.6, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_3b625803f0d954d3f6a07a0c390fa12d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5955c63f774f2ed323d816d9e2401db0 = $(`<div id="html_5955c63f774f2ed323d816d9e2401db0" style="width: 100.0%; height: 100.0%;">LGA: La Guardia Airport: 103</div>`)[0];
+                popup_3b625803f0d954d3f6a07a0c390fa12d.setContent(html_5955c63f774f2ed323d816d9e2401db0);
+            
+        
+
+        circle_marker_927b162f9ecb0e380cacbf855a1df49a.bindPopup(popup_3b625803f0d954d3f6a07a0c390fa12d)
+        ;
+
+        
+    
+    
+            circle_marker_927b162f9ecb0e380cacbf855a1df49a.bindTooltip(
+                `<div>
+                     LGA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aa92c93b14231764f177036bcb6eb2ce = L.circleMarker(
+                [41.9786, -87.9048],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.4, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_44a346691748052495649907b5fa27fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43acfe24d0af74d755bab975ae7a6338 = $(`<div id="html_43acfe24d0af74d755bab975ae7a6338" style="width: 100.0%; height: 100.0%;">ORD: Chicago O'Hare International Airport: 72</div>`)[0];
+                popup_44a346691748052495649907b5fa27fb.setContent(html_43acfe24d0af74d755bab975ae7a6338);
+            
+        
+
+        circle_marker_aa92c93b14231764f177036bcb6eb2ce.bindPopup(popup_44a346691748052495649907b5fa27fb)
+        ;
+
+        
+    
+    
+            circle_marker_aa92c93b14231764f177036bcb6eb2ce.bindTooltip(
+                `<div>
+                     ORD
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6162436a198ecdaa2af0f8af61d1c66f = L.circleMarker(
+                [42.36429977, -71.00520325],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.6, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_5f36f68515cc358164283152ed9ba80b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_855cb46ed7931628ae451816bc552cef = $(`<div id="html_855cb46ed7931628ae451816bc552cef" style="width: 100.0%; height: 100.0%;">BOS: General Edward Lawrence Logan International Airport: 28</div>`)[0];
+                popup_5f36f68515cc358164283152ed9ba80b.setContent(html_855cb46ed7931628ae451816bc552cef);
+            
+        
+
+        circle_marker_6162436a198ecdaa2af0f8af61d1c66f.bindPopup(popup_5f36f68515cc358164283152ed9ba80b)
+        ;
+
+        
+    
+    
+            circle_marker_6162436a198ecdaa2af0f8af61d1c66f.bindTooltip(
+                `<div>
+                     BOS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fcbdf2f7e4d0a393832fcf8c481552d7 = L.circleMarker(
+                [27.39539909362793, -82.55439758300781],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.6, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_2f29d4394659fa5547b05a5c2429bee0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c7514405abf2ac77f6130204cd196ee = $(`<div id="html_5c7514405abf2ac77f6130204cd196ee" style="width: 100.0%; height: 100.0%;">SRQ: Sarasota Bradenton International Airport: 8</div>`)[0];
+                popup_2f29d4394659fa5547b05a5c2429bee0.setContent(html_5c7514405abf2ac77f6130204cd196ee);
+            
+        
+
+        circle_marker_fcbdf2f7e4d0a393832fcf8c481552d7.bindPopup(popup_2f29d4394659fa5547b05a5c2429bee0)
+        ;
+
+        
+    
+    
+            circle_marker_fcbdf2f7e4d0a393832fcf8c481552d7.bindTooltip(
+                `<div>
+                     SRQ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7bef35da2a42f33eede7a4c621a62d5a = L.circleMarker(
+                [32.89860153, -80.04049683],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.6, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_247775fe5d1765d9945db7d7486472b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20579ba54b180f0175af24ac267e1b6b = $(`<div id="html_20579ba54b180f0175af24ac267e1b6b" style="width: 100.0%; height: 100.0%;">CHS: Charleston Air Force Base-International Airport: 8</div>`)[0];
+                popup_247775fe5d1765d9945db7d7486472b8.setContent(html_20579ba54b180f0175af24ac267e1b6b);
+            
+        
+
+        circle_marker_7bef35da2a42f33eede7a4c621a62d5a.bindPopup(popup_247775fe5d1765d9945db7d7486472b8)
+        ;
+
+        
+    
+    
+            circle_marker_7bef35da2a42f33eede7a4c621a62d5a.bindTooltip(
+                `<div>
+                     CHS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_76411d17b67ed27adf41fe1e62dba5bd = L.circleMarker(
+                [33.67570114, -117.8679962],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_fcc7ae576befbb4b74cbdf403d10297a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69d2f0cf7e52c413cf61811d60cb63fb = $(`<div id="html_69d2f0cf7e52c413cf61811d60cb63fb" style="width: 100.0%; height: 100.0%;">SNA: John Wayne Airport-Orange County Airport: 15</div>`)[0];
+                popup_fcc7ae576befbb4b74cbdf403d10297a.setContent(html_69d2f0cf7e52c413cf61811d60cb63fb);
+            
+        
+
+        circle_marker_76411d17b67ed27adf41fe1e62dba5bd.bindPopup(popup_fcc7ae576befbb4b74cbdf403d10297a)
+        ;
+
+        
+    
+    
+            circle_marker_76411d17b67ed27adf41fe1e62dba5bd.bindTooltip(
+                `<div>
+                     SNA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0de90cab0dedb2fb42051ba457124b34 = L.circleMarker(
+                [37.721298, -122.221001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_49b29ade907933a9c214e058b478ab57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dca44db8ca388e5b72941e5edae3b14e = $(`<div id="html_dca44db8ca388e5b72941e5edae3b14e" style="width: 100.0%; height: 100.0%;">OAK: Metropolitan Oakland International Airport: 1</div>`)[0];
+                popup_49b29ade907933a9c214e058b478ab57.setContent(html_dca44db8ca388e5b72941e5edae3b14e);
+            
+        
+
+        circle_marker_0de90cab0dedb2fb42051ba457124b34.bindPopup(popup_49b29ade907933a9c214e058b478ab57)
+        ;
+
+        
+    
+    
+            circle_marker_0de90cab0dedb2fb42051ba457124b34.bindTooltip(
+                `<div>
+                     OAK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_59b748e7e636b9f4f11e2bf946f7eb2e = L.circleMarker(
+                [37.61899948120117, -122.375],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_270ad9e2237a7f5b8be3634f8204f2f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34c83f6a257fac141384ca2be23a6078 = $(`<div id="html_34c83f6a257fac141384ca2be23a6078" style="width: 100.0%; height: 100.0%;">SFO: San Francisco International Airport: 3</div>`)[0];
+                popup_270ad9e2237a7f5b8be3634f8204f2f0.setContent(html_34c83f6a257fac141384ca2be23a6078);
+            
+        
+
+        circle_marker_59b748e7e636b9f4f11e2bf946f7eb2e.bindPopup(popup_270ad9e2237a7f5b8be3634f8204f2f0)
+        ;
+
+        
+    
+    
+            circle_marker_59b748e7e636b9f4f11e2bf946f7eb2e.bindTooltip(
+                `<div>
+                     SFO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_138c858b6322969b8975802cd11e4842 = L.circleMarker(
+                [44.882, -93.221802],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.0, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_883693e4895224faeb51b181eea80621 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f4164bee3a80e04459a6a45e809b423 = $(`<div id="html_7f4164bee3a80e04459a6a45e809b423" style="width: 100.0%; height: 100.0%;">MSP: Minneapolis-St Paul International/Wold-Chamberlain Airport: 30</div>`)[0];
+                popup_883693e4895224faeb51b181eea80621.setContent(html_7f4164bee3a80e04459a6a45e809b423);
+            
+        
+
+        circle_marker_138c858b6322969b8975802cd11e4842.bindPopup(popup_883693e4895224faeb51b181eea80621)
+        ;
+
+        
+    
+    
+            circle_marker_138c858b6322969b8975802cd11e4842.bindTooltip(
+                `<div>
+                     MSP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_32ea3001822c2e8aeae5b47f482b6e61 = L.circleMarker(
+                [29.984399795532227, -95.34140014648438],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_06fa9c588cda41b6f0a658f1cb43927c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3a4a4d0f59090a90d00d652391affa0 = $(`<div id="html_b3a4a4d0f59090a90d00d652391affa0" style="width: 100.0%; height: 100.0%;">IAH: George Bush Intercontinental Houston Airport: 20</div>`)[0];
+                popup_06fa9c588cda41b6f0a658f1cb43927c.setContent(html_b3a4a4d0f59090a90d00d652391affa0);
+            
+        
+
+        circle_marker_32ea3001822c2e8aeae5b47f482b6e61.bindPopup(popup_06fa9c588cda41b6f0a658f1cb43927c)
+        ;
+
+        
+    
+    
+            circle_marker_32ea3001822c2e8aeae5b47f482b6e61.bindTooltip(
+                `<div>
+                     IAH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_efd49f7d6d151fc217db603b4548515d = L.circleMarker(
+                [37.362598, -121.929001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_30626f33e9fc344766926be6f989c85d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56f9efad3e8a5ac6cb0dfabef7534760 = $(`<div id="html_56f9efad3e8a5ac6cb0dfabef7534760" style="width: 100.0%; height: 100.0%;">SJC: Norman Y. Mineta San Jose International Airport: 4</div>`)[0];
+                popup_30626f33e9fc344766926be6f989c85d.setContent(html_56f9efad3e8a5ac6cb0dfabef7534760);
+            
+        
+
+        circle_marker_efd49f7d6d151fc217db603b4548515d.bindPopup(popup_30626f33e9fc344766926be6f989c85d)
+        ;
+
+        
+    
+    
+            circle_marker_efd49f7d6d151fc217db603b4548515d.bindTooltip(
+                `<div>
+                     SJC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e11389d2510bafbf7d403e301cc76f20 = L.circleMarker(
+                [29.533700942993164, -98.46980285644533],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_4ed4ecda82de160d536e8114ec4bc8fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d4b2081ed8f34483af2cf7b9c5ecab6 = $(`<div id="html_9d4b2081ed8f34483af2cf7b9c5ecab6" style="width: 100.0%; height: 100.0%;">SAT: San Antonio International Airport: 4</div>`)[0];
+                popup_4ed4ecda82de160d536e8114ec4bc8fe.setContent(html_9d4b2081ed8f34483af2cf7b9c5ecab6);
+            
+        
+
+        circle_marker_e11389d2510bafbf7d403e301cc76f20.bindPopup(popup_4ed4ecda82de160d536e8114ec4bc8fe)
+        ;
+
+        
+    
+    
+            circle_marker_e11389d2510bafbf7d403e301cc76f20.bindTooltip(
+                `<div>
+                     SAT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_80b3a5102685c4d026f276ad97c30e9f = L.circleMarker(
+                [30.194499969482425, -97.6698989868164],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_1702ce39c24b4d324f512b24ee8b4084 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47027b9cb9ec549f979ab267311856b8 = $(`<div id="html_47027b9cb9ec549f979ab267311856b8" style="width: 100.0%; height: 100.0%;">AUS: Austin Bergstrom International Airport: 4</div>`)[0];
+                popup_1702ce39c24b4d324f512b24ee8b4084.setContent(html_47027b9cb9ec549f979ab267311856b8);
+            
+        
+
+        circle_marker_80b3a5102685c4d026f276ad97c30e9f.bindPopup(popup_1702ce39c24b4d324f512b24ee8b4084)
+        ;
+
+        
+    
+    
+            circle_marker_80b3a5102685c4d026f276ad97c30e9f.bindTooltip(
+                `<div>
+                     AUS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ad92e6518f4a67c32c6f11f048abe0e7 = L.circleMarker(
+                [39.2976, -94.713898],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.0, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_6a95924d461b7a36ddc653cf3644ae43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87504dde830e21dbb11658dc70f6f938 = $(`<div id="html_87504dde830e21dbb11658dc70f6f938" style="width: 100.0%; height: 100.0%;">MCI: Kansas City International Airport: 30</div>`)[0];
+                popup_6a95924d461b7a36ddc653cf3644ae43.setContent(html_87504dde830e21dbb11658dc70f6f938);
+            
+        
+
+        circle_marker_ad92e6518f4a67c32c6f11f048abe0e7.bindPopup(popup_6a95924d461b7a36ddc653cf3644ae43)
+        ;
+
+        
+    
+    
+            circle_marker_ad92e6518f4a67c32c6f11f048abe0e7.bindTooltip(
+                `<div>
+                     MCI
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_459e1a161d04ae50c1bcf8831af073d8 = L.circleMarker(
+                [33.6367, -84.428101],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_0992f7bf6459c6ffe673bd8bbdd9a426 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a73735c9135ee2a043ce74d4bc98c454 = $(`<div id="html_a73735c9135ee2a043ce74d4bc98c454" style="width: 100.0%; height: 100.0%;">ATL: Hartsfield Jackson Atlanta International Airport: 2</div>`)[0];
+                popup_0992f7bf6459c6ffe673bd8bbdd9a426.setContent(html_a73735c9135ee2a043ce74d4bc98c454);
+            
+        
+
+        circle_marker_459e1a161d04ae50c1bcf8831af073d8.bindPopup(popup_0992f7bf6459c6ffe673bd8bbdd9a426)
+        ;
+
+        
+    
+    
+            circle_marker_459e1a161d04ae50c1bcf8831af073d8.bindTooltip(
+                `<div>
+                     ATL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d650d771b264ea00150f394f9ffee59e = L.circleMarker(
+                [34.42620087, -119.8399963],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_566a20ab6c222b550ed7ab81af6a952f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ade1e102407b0480c09fc678f797812 = $(`<div id="html_0ade1e102407b0480c09fc678f797812" style="width: 100.0%; height: 100.0%;">SBA: Santa Barbara Municipal Airport: 2</div>`)[0];
+                popup_566a20ab6c222b550ed7ab81af6a952f.setContent(html_0ade1e102407b0480c09fc678f797812);
+            
+        
+
+        circle_marker_d650d771b264ea00150f394f9ffee59e.bindPopup(popup_566a20ab6c222b550ed7ab81af6a952f)
+        ;
+
+        
+    
+    
+            circle_marker_d650d771b264ea00150f394f9ffee59e.bindTooltip(
+                `<div>
+                     SBA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1d6f2bb2eebdf3302fcb9f80b5a0d128 = L.circleMarker(
+                [36.1245002746582, -86.6781997680664],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_d2ca875de7eb2257da339a6e0b742299 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7297097611d7e298c84110e1cd071eff = $(`<div id="html_7297097611d7e298c84110e1cd071eff" style="width: 100.0%; height: 100.0%;">BNA: Nashville International Airport: 2</div>`)[0];
+                popup_d2ca875de7eb2257da339a6e0b742299.setContent(html_7297097611d7e298c84110e1cd071eff);
+            
+        
+
+        circle_marker_1d6f2bb2eebdf3302fcb9f80b5a0d128.bindPopup(popup_d2ca875de7eb2257da339a6e0b742299)
+        ;
+
+        
+    
+    
+            circle_marker_1d6f2bb2eebdf3302fcb9f80b5a0d128.bindTooltip(
+                `<div>
+                     BNA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b193012f6c3fdb4e5003aa7d3c313f6f = L.circleMarker(
+                [44.48509979248047, -88.12960052490234],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_77e9ac12407c3bb7a4c755ed16b15b9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9d152a2434af13710322c9d735f45e3 = $(`<div id="html_b9d152a2434af13710322c9d735f45e3" style="width: 100.0%; height: 100.0%;">GRB: Austin Straubel International Airport: 2</div>`)[0];
+                popup_77e9ac12407c3bb7a4c755ed16b15b9c.setContent(html_b9d152a2434af13710322c9d735f45e3);
+            
+        
+
+        circle_marker_b193012f6c3fdb4e5003aa7d3c313f6f.bindPopup(popup_77e9ac12407c3bb7a4c755ed16b15b9c)
+        ;
+
+        
+    
+    
+            circle_marker_b193012f6c3fdb4e5003aa7d3c313f6f.bindTooltip(
+                `<div>
+                     GRB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2ce2e72dfd2f1e990fd738eedabb648f = L.circleMarker(
+                [35.87760162353516, -78.7874984741211],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_9a00ed56346339b62a88c5134c1b7bba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92ac0ab10462a8e9d63e8ff9c073aa97 = $(`<div id="html_92ac0ab10462a8e9d63e8ff9c073aa97" style="width: 100.0%; height: 100.0%;">RDU: Raleigh Durham International Airport: 2</div>`)[0];
+                popup_9a00ed56346339b62a88c5134c1b7bba.setContent(html_92ac0ab10462a8e9d63e8ff9c073aa97);
+            
+        
+
+        circle_marker_2ce2e72dfd2f1e990fd738eedabb648f.bindPopup(popup_9a00ed56346339b62a88c5134c1b7bba)
+        ;
+
+        
+    
+    
+            circle_marker_2ce2e72dfd2f1e990fd738eedabb648f.bindTooltip(
+                `<div>
+                     RDU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aaea92ef4ce30729afac063318bad9bf = L.circleMarker(
+                [32.7336006165, -117.190002441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_d7a23a8b8e980e854ff653cd01a9280f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e34b381310b914b9b33c98508a57c99 = $(`<div id="html_5e34b381310b914b9b33c98508a57c99" style="width: 100.0%; height: 100.0%;">SAN: San Diego International Airport: 2</div>`)[0];
+                popup_d7a23a8b8e980e854ff653cd01a9280f.setContent(html_5e34b381310b914b9b33c98508a57c99);
+            
+        
+
+        circle_marker_aaea92ef4ce30729afac063318bad9bf.bindPopup(popup_d7a23a8b8e980e854ff653cd01a9280f)
+        ;
+
+        
+    
+    
+            circle_marker_aaea92ef4ce30729afac063318bad9bf.bindTooltip(
+                `<div>
+                     SAN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f7e3ddc9c3596f7860e284b17f75c388 = L.circleMarker(
+                [34.20069885253906, -118.35900115966795],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_6f95edd1d89ef6d27da314c2ee09f8fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a17212c3a97aacc33fafed24133e2e35 = $(`<div id="html_a17212c3a97aacc33fafed24133e2e35" style="width: 100.0%; height: 100.0%;">BUR: Bob Hope Airport: 1</div>`)[0];
+                popup_6f95edd1d89ef6d27da314c2ee09f8fa.setContent(html_a17212c3a97aacc33fafed24133e2e35);
+            
+        
+
+        circle_marker_f7e3ddc9c3596f7860e284b17f75c388.bindPopup(popup_6f95edd1d89ef6d27da314c2ee09f8fa)
+        ;
+
+        
+    
+    
+            circle_marker_f7e3ddc9c3596f7860e284b17f75c388.bindTooltip(
+                `<div>
+                     BUR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_eaf0fad6d23521304cf1cce2ca3ebc4c = L.circleMarker(
+                [47.61989974975586, -117.53399658203124],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_e6c3edb5b3c87e162f548329a3bb4a6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ba8bddc5c6385c35770ad7e51a5a93e = $(`<div id="html_8ba8bddc5c6385c35770ad7e51a5a93e" style="width: 100.0%; height: 100.0%;">GEG: Spokane International Airport: 4</div>`)[0];
+                popup_e6c3edb5b3c87e162f548329a3bb4a6f.setContent(html_8ba8bddc5c6385c35770ad7e51a5a93e);
+            
+        
+
+        circle_marker_eaf0fad6d23521304cf1cce2ca3ebc4c.bindPopup(popup_e6c3edb5b3c87e162f548329a3bb4a6f)
+        ;
+
+        
+    
+    
+            circle_marker_eaf0fad6d23521304cf1cce2ca3ebc4c.bindTooltip(
+                `<div>
+                     GEG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_01cac286969f4cf290ccde7556b74e3e = L.circleMarker(
+                [40.63980103, -73.77890015],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(map_a94d8f3598c9c6a155739f53dcd37b6d);
+        
+    
+        var popup_18ea803b2f6708c389cfbf20d75b0432 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fec08cddd50d705a0cbb4e66d6ef5b3 = $(`<div id="html_9fec08cddd50d705a0cbb4e66d6ef5b3" style="width: 100.0%; height: 100.0%;">JFK: John F Kennedy International Airport: 1</div>`)[0];
+                popup_18ea803b2f6708c389cfbf20d75b0432.setContent(html_9fec08cddd50d705a0cbb4e66d6ef5b3);
+            
+        
+
+        circle_marker_01cac286969f4cf290ccde7556b74e3e.bindPopup(popup_18ea803b2f6708c389cfbf20d75b0432)
+        ;
+
+        
+    
+    
+            circle_marker_01cac286969f4cf290ccde7556b74e3e.bindTooltip(
+                `<div>
+                     JFK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
